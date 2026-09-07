@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>CV - Martin Vuillemard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --main-color: #0b7075;
+        }
+
+        html {
+            background-color: #2a2a2e;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        body {
+            max-width: 850px;
+            font-family: Calibri, sans-serif;
+            margin: auto;
+            padding: 2.5rem;
+            background-color: #f4f4f4;
+            color: #333;
+        }   
+
+        a {
+            color: #2980b9;
+            text-decoration: none;
+        }
+
+        .bold {
+            font-weight: bold;
+        }
+
+        .small {
+            font-style: italic;
+            font-size: x-small;
+        }
+
+        .highlight {
+            color: var(--main-color);
+        }
+    
+        .mb-default {
+            margin-bottom: 0.5rem;
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        header {
+            justify-content: space-between;
+        }
+
+        header h1 {
+            color: var(--main-color);
+            margin: 0;
+            font-size: 42px;
+            font-weight: 900;
+            font-family: 'Roboto Slab', serif;
+        }
+
+        header h2 {
+            margin: 0;
+            font-size: large;
+            font-weight: 500;
+        }
+
+        header .info > div {
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+            font-size: large;
+        }
+
+        section {
+            display: grid;
+            grid-template-columns: 1fr 4fr;
+            justify-content: stretch;
+            align-content: stretch;
+            margin-top: 1.5rem;
+            column-gap: 25px;
+            row-gap: 0.6rem;
+        }
+
+        section .title {
+            color: var(--main-color);
+            font-weight: 900;
+            font-size: 14px;
+            justify-self: end;
+            grid-column: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+            font-family: 'Roboto Slab', serif;
+        }
+
+        section h3::before {
+            content: '';
+            display: inline-block;
+            width: 20%;
+            height: 10px;
+            background-color: var(--main-color);
+            margin-right: 20px;
+            vertical-align: middle;
+            border-radius: 6px;
+        }
+
+        section h3 {
+            margin: 0;
+            color: var(--main-color);
+            grid-column: 1 / -1;
+            font-size: 24px;
+            font-family: 'Roboto Slab', serif;
+        }
+
+        section .inner-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        @media print {
+            html {
+                margin: 0;
+                padding: 0;
+                background-color: transparent;
+            }
+            body {
+                margin: 0;
+                padding: 0;
+                font-size: 15px;
+                background-color: transparent;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="flex">
+        <div>
+            <h1>Martin Vuillemard</h1>
+            <h2>Développeur logiciel - Permis B</h2>
+        </div>
+        <div class="info">
+            <div class="mb-default">
+                <div><a href="mailto:martin@luniks.fr">martin@luniks.fr</a></div>
+                <div>06.11.81.74.59</div>
+            </div>
+            <div>
+                <div>2 rue du castelas</div>
+                <div>81500 St-Jean-de-Rives</div>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <h3>Diplômes & Formation</h3>
+        <div class="title">2023 - 2024</div>
+        <div>
+            <div class="bold">Formation en ligne sur le Maraîchage Sol Vivant - Ver de terre Production</div>
+            <div>Formation certifiante : Intégrer l'agroécologie dans son activité agricole (RS5971)</div>
+        </div>
+        <div class="title">2008 - 2011</div>
+        <div>
+            <div class="bold">Université de Technologie de Troyes</div>
+            <div>Diplôme d’ingénieur en Systèmes d’Information et Télécommunications (BAC+5)</div>
+            <div>Spécialisation en Technologies mobiles et Systèmes embarqués</div>
+        </div>
+        <div class="title">2006 - 2008</div>
+        <div>
+            <div class="bold">IUT Nancy-Brabois</div>
+            <div>DUT Génie électrique et Informatique Industrielle (BAC+2)</div>
+        </div>
+    </section>
+
+    <section>
+        <h3>Parcours Professionnel</h3>
+        <div class="title">
+            <div>Depuis Janvier 2018</div>
+            <div class="small">(8 ans)</div>
+        </div>
+        <div>
+            <div class="bold">Développeur Logiciel - Xplor Technologies</div>
+            <div>Logiciel de gestion de clubs de sport, studios et box</div>
+            <div>Application mobile Decicoach et espace de réservation en ligne des membres</div>
+        </div>
+        <div class="title">
+            <div>Août 2013</div>
+            <div>à Janvier 2018</div>
+            <div class="small">(5 ans)</div>
+        </div>
+        <div>
+            <div class="bold">Développeur Logiciel / Responsable Technique - THALES Services</div>
+            <div>Plateforme générique d'accueil pour les missions du Centre National d'Etudes Spatiales</div>
+            <div>Logiciel d'analyse et de conversion de trames GNSS</div>
+        </div>
+        <div class="title">
+            <div>Juillet 2011</div>
+            <div>à Août 2013</div>
+            <div class="small">(2 ans)</div>
+        </div>
+        <div>
+            <div class="bold">Développeur Logiciel - Sogeti High Tech</div>
+            <div>Logiciel de supervision pour le centre de contrôle mission du système de positionnement Galileo</div>
+            <div>Logiciel d'analyse des performances du système EGNOS</div>
+        </div>
+        <div class="title">
+            <div>Février</div>
+            <div>à Juillet 2011</div>
+            <div class="small">(6 mois)</div>
+        </div>
+        <div>
+            <div class="bold">Stagiaire - THALES Avionics</div>
+            <div>Standardisation d’une messagerie inter-applications sol-bord</div>
+        </div>
+        <div class="title">
+            <div>Février</div>
+            <div>à Juillet 2010</div>
+            <div class="small">(6 mois)</div>
+        </div>
+        <div>
+            <div class="bold">Stagiaire - Institut Fraunhofer IMS (Allemagne)</div>
+            <div>Développement d’un logiciel de test et de mise en service de transpondeurs RFID</div>
+        </div>
+    </section>
+
+    <section>
+        <h3>Compétences</h3>
+        <div class="title">Maraîchage</div>
+        <div>Suivi d'itinéraire technique : semi, plantation, fertilisation, récolte</div>
+        <div class="title">Développement</div>
+        <div class="inner-grid">
+            <div><span class="bold">Web :</span> HTML, CSS, JavaScript - Vuejs</div>
+            <div><span class="bold">Programation :</span> Java, Python</div>
+            <div><span class="bold">Mobile :</span> React-Native, PWA</div>
+        </div>
+        <div class="title">Divers</div>
+        <div class="inner-grid">
+            <div><span class="bold">Langues :</span> Français, Anglais (Bulats : B2+)</div>
+            <div><span class="bold">Méthodologies :</span> Scrum, Kanban</div>
+        </div>
+    </section>
+
+    <section>
+        <h3>Loisirs</h3>
+        <div class="title">Associatif</div>
+        <div>
+            <div>Secrétaire du Comité des Fêtes de St-Jean-de-Rives</div>
+            <div>Bénévolat en maraîchage aux Jardins de St-Victor (une demi-journée par semaine)</div>
+        </div>
+        <div class="title">Divers</div>
+        <div class="inner-grid">
+            <div>
+                <div><span class="bold">Sport : </span>Rugby subaquatique, Running</div>
+            </div>
+            <div>
+                <div><span class="bold">Photographie : </span>Nikon D5200, Instax mini</div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
